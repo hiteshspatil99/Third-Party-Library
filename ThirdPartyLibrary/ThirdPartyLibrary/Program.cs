@@ -7,8 +7,11 @@ namespace ThirdPartyLibrary
         static void Main(string[] args)
         {
             Console.WriteLine("# Read data from CSV & Write data in CSv");
-            CsvHandler.ImplementCSVdatHandling();
-            Console.WriteLine();
+            CsvHandler exportCSV = new CsvHandler();
+            exportCSV.ImplementCSVdatHandling();
+            Console.WriteLine("# Read data from CSV & Write data to Json");
+            CsvToJson json = new CsvToJson();
+            json.ImplementCsvToJson();
 
         }
 
