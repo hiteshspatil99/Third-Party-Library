@@ -20,7 +20,7 @@ namespace ThirdPartyLibrary
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
                 var records = csv.GetRecords<AddressData>().ToList();
-                Console.WriteLine("Read data succesfully from addresses csv");
+                Console.WriteLine("\n Read data succesfully from addresses csv");
                 foreach (AddressData addressData in records)
                 {
                     Console.WriteLine(addressData.firstname);

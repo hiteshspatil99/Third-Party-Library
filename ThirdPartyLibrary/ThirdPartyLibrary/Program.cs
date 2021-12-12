@@ -9,9 +9,14 @@ namespace ThirdPartyLibrary
             Console.WriteLine("# Read data from CSV & Write data in CSv");
             CsvHandler exportCSV = new CsvHandler();
             exportCSV.ImplementCSVdatHandling();
+
             Console.WriteLine("# Read data from CSV & Write data to Json");
             CsvToJson json = new CsvToJson();
             json.ImplementCsvToJson();
+
+            Console.WriteLine("# Read data from Json & Write data to CSV");
+            JsonToCsv csv = new JsonToCsv();
+            csv.ImplementJsonToCsv();
 
         }
 
